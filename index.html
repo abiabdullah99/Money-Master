@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Expenses</title>
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome Cdn -->
+  </head>
+  <body>
+    <!-- Header Area Strat  -->
+    <header class="container">
+      <h1>Money Expenses</h1>
+      <img src="images/icon.png" alt="" />
+    </header>
+    <main>
+      <!-- Banner Area  -->
+      <section class="banner-area">
+        <div class="left-banner">
+          <img src="images/banner.jpg" alt="" />
+        </div>
+      <!-- right banner -->
+        <div class="right-banner">
+          <div class="calculate">
+            <h1 class="head-title">Income</h1>
+
+            <div class="row">
+              <p class="text-title">Income:</p>
+              <input class="input-filed" id="income-input" type="text" />
+            </div>
+      <!-- Expenses Area  -->
+            <h1 class="head-title">Expenses</h1>
+            <div class="row">
+                <p class="text-title" >Food:</p>
+                <input class="input-filed" id="food-input" type="text" />
+            </div>
+      <!-- Rent Input  -->
+            <div class="row">
+                <p class="text-title" >Rent: </p>
+                <input class="input-filed" id="rent-input" type="text" />
+            </div>
+      <!-- Clothes Input  -->
+            <div class="row">
+                <p class="text-title">Clothes:</p>
+                <input class="input-filed" id="clothes-input" type="text" />
+            </div>
+      <!-- Calculation  -->
+              <button id="calculate-btn" class="blue-btn">Calculate</button>
+              <p class="head-title">Total Expenses: <span id="expenses-input">00</span></p>
+              <p style="margin-top: -5px;" class="head-title">Balance: <span id="balance-input">00</span></p>
+      <!-- Save Amount Area  -->
+              <div class="extra-div">
+                <div class="col-1">
+                    <p class="text-title">Save:</p>
+                    <input class="extra-input" id="saving-input" type="text">
+                </div>
+
+                <div class="col-1">
+                    <span class="parcentages">%</span>
+                   <button style="margin-top: -2px;" id="save-btn" class="blue-btn">Save</button>
+                </div>
+              </div> 
+
+            <p class="head-title">Saving Amount: <span id="saving-amount">00</span></p>
+
+            <p  style="margin-top: -5px;" class="head-title">Remaining Balance: <span id="remaining-balance">00</span></p>
+           </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+   <!-- JavaScript File  -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
